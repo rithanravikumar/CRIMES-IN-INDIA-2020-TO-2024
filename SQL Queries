@@ -1,0 +1,90 @@
+### SQL QUERIES
+
+1. Get the total number of reported crimes by city:
+
+  select City, count(*) AS Total_Crimes
+  from crime_data
+  group by City
+  order by Total_Crimes DESC;
+
+2. Find the top 5 crime types with the highest occurrence:
+
+  select Crime_Description, count(*) AS Occurrences
+  from crime_data
+  group by Crime_Description
+  order by Occurrences DESC
+  limit 5;
+
+3. Get the average age of victims involved in each type of crime:
+
+  select Crime_Description, AVG(Victim_Age) AS Average_Victim_Age
+  from crime_data
+  group by Crime_Description
+ order by Average_Victim_Age DESC;
+
+4. Retrieve the number of crimes reported each month:
+
+   select DATE_FORMAT(Date_Reported, '%Y-%m') AS Month, COUNT(*) AS Crime_Count
+   from crime_data
+   group by Month
+   order by Month;
+
+5. Count the number of crimes where a specific weapon was used:
+
+   select Weapon_Used, COUNT(*) AS Crime_Count
+   from crime_data
+   where Weapon_Used = 'Firearm'
+   group by Weapon_Used;
+
+6. Get the proportion of cases that were closed:
+
+   select (count(CASE WHEN Case_Closed = 'Yes' THEN 1 END) / count(*)) * 100 AS Closed_Case_Percentage
+   FROM crime_data;
+
+7. Identify the most common crime type for each city:
+
+   select City, Crime_Description, COUNT(*) AS Occurrences
+   from crime_data
+   group by City, Crime_Description
+   order by City, Occurrences DESC;
+
+8. Find the average number of police deployed by crime type:
+
+   select Crime_Description, AVG(Police_Deployed) AS Avg_Police_Deployed
+   from crime_data
+   group by Crime_Description
+   order by Avg_Police_Deployed DESC;
+
+9. Get the list of crimes involving victims under the age of 18:
+
+   select *
+   from crime_data
+   where Victim_Age < 18;
+
+10. Retrieve the count of crimes for each gender of victims across all cities:
+
+    select Victim_Gender, COUNT(*) AS Crime_Count
+    from crime_data
+    group by Victim_Gender;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
