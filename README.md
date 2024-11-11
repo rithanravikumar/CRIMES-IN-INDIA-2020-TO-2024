@@ -1,6 +1,6 @@
 # CRIMES-IN-INDIA-2020-2021
 
-This dataset provides an in-depth overview of criminal activities in various Indian cities between 2020 and 2024. It includes detailed records on the nature of the crimes, the date and time they occurred, the weapons involved, victim profiles, and the extent of police presence. Covering a wide range of offenses, from identity theft to homicide, the dataset offers valuable insights for researchers, policymakers, and law enforcement agencies looking to analyze crime trends and enhance public safety. Additionally, it contains information on whether cases were resolved, offering a clear perspective on crime resolution rates across cities.
+This dataset provides an in-depth overview of criminal activities in various Indian cities in 2020 and 2021. It includes detailed records on the nature of the crimes, the date and time they occurred, the weapons involved, victim profiles, and the extent of police presence. Covering a wide range of offenses, from identity theft to homicide, the dataset offers valuable insights for researchers, policymakers, and law enforcement agencies looking to analyze crime trends and enhance public safety. Additionally, it contains information on whether cases were resolved, offering a clear perspective on crime resolution rates across cities.
 
 Below is a brief description of each column:
 
