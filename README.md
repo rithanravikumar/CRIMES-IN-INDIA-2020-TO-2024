@@ -52,5 +52,8 @@ This data can provide insights into crime trends, victim demographics, and case 
 The Categorical columns are City, Crime Code, Crime description, Victim age, Victim gender, Weapon used, Crime domain, Police deployed, Case Closed.
 The continous columns are Report Number, Time of occurence.
 
-In my point of view, In the reported cases almost 50% of cases have not been solved.
+In my point of view,
+In the reported cases almost 50% of cases have not been solved.
 Most of the victims are Female.
+There are some outliers in the Date reported, Date of occurence and Time of occurence.
+
