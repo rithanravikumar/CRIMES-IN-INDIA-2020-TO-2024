@@ -47,3 +47,10 @@ Below is a brief description of each column:
  Date and time when the case was closed, if applicable.
 
 This data can provide insights into crime trends, victim demographics, and case outcomes across different cities.
+
+
+The Categorical columns are City, Crime Code, Crime description, Victim age, Victim gender, Weapon used, Crime domain, Police deployed, Case Closed.
+The continous columns are Report Number, Time of occurence.
+
+In my point of view, In the reported cases almost 50% of cases have not been solved.
+Most of the victims are Female.
